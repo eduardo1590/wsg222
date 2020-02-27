@@ -89,9 +89,14 @@ header nav ul li a{
 
 
 /*  header  */
+.top-bar {
+    background-color: #FAD201;
+    color: #404040 ;
+    font-family: 'lato_regular';
+}
 header{
     width: 100%;
-    height: 80px;
+    height: 100px;
     position: fixed;
     background: #2980b9;
     z-index: 999999;
@@ -211,7 +216,7 @@ header ul.social li a.gplus{
 
 
 .contenido{
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 /*  Billboard  */
@@ -742,6 +747,14 @@ a{
 
 
 @media (max-width:800px){
+    .top-bar{
+        display: none;
+    }
+
+    header{
+        height: 80px;
+    }
+
     header .logo{
         float: none;
     }
@@ -837,5 +850,7 @@ a{
     #respuesta #tabla tr{
         font-size: 80%;
     }
+
+    
 
 }
